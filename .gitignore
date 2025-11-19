@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But NOT these:
+!.gitignore
+!*.html
+!images/
+
+# And don't ignore files inside images/
+!images/**
