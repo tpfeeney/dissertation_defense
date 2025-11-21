@@ -31,7 +31,7 @@
     }
   </style>
   <link rel="stylesheet" href="Feeney_Defense_2025_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link href="Feeney_Defense_2025_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Feeney_Defense_2025_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="Feeney_Defense_2025_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -166,13 +166,6 @@ Timothy Feeney
 <h1>Background</h1>
 
 </section>
-<section id="cd4-cells-are-important-immune-cells" class="slide level2">
-<h2>CD4 Cells Are Important Immune Cells</h2>
-
-<img data-src="images/immune_cells.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
-<p>First aid for the basic sciences, Chp 3</p>
-</div>
-</section>
 <section id="hiv-infection-is-acute-and-chronic" class="slide level2">
 <h2>HIV Infection is acute and chronic</h2>
 
@@ -180,46 +173,10 @@ Timothy Feeney
 <p>Janeway’s Immunobiology 9th ed., Chp 13</p>
 </div>
 </section>
-<section id="the-many-targets-of-hiv-treatment" class="slide level2">
-<h2>The many targets of HIV treatment</h2>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/drugs.jpg" class="quarto-figure quarto-figure-center" style="width:47.5%"></p>
-</figure>
-</div>
-</div>
-<div class="footer">
-
-</div>
-
-<aside><div>
-<p>Gandhi <em>et al.</em> NEJM.2014</p>
-</div></aside></section>
-<section id="global-hiv-prevalence-is-increasing" class="slide level2">
-<h2>Global HIV prevalence is increasing</h2>
-<div class="columns">
-<div class="column">
-<ul>
-<li><p>Antiretroviral Therapy is increasing</p></li>
-<li><p>Mortality Decreasing</p></li>
-</ul>
-</div><div class="column">
-<img data-src="images/prev.png" class="quarto-figure quarto-figure-center" style="width:80.0%">
-<div style="font-size: 0.5em;">
-green=overall, red=female, blue=male
-</div>
-</div><div class="footer">
-
-</div>
-</div>
-<aside><div>
-<p>Frank <em>et al.</em> Lancet. 2019</p>
-</div></aside></section>
 <section id="adherence-plays-a-role-in-hiv-treatment-efficacy" class="slide level2">
 <h2>Adherence plays a role in HIV treatment efficacy</h2>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:40%;">
 <div style="font-size: 0.65em;">
 <ul>
 <li><p>Majority report adherence levels &lt;90%; plurality &lt;80%.</p></li>
@@ -232,11 +189,11 @@ green=overall, red=female, blue=male
 </ul></li>
 </ul>
 </div>
-</div><div class="column">
+</div><div class="column" style="width:60%;">
 <div style="text-align: center;">
-<img data-src="images/pdc.png" class="quarto-figure quarto-figure-center" style="width:45.0%">
-<div style="font-size: 0.5em;">
-PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI=non-nucleoside reverse transcriptase inhibitor
+<img data-src="images/pdc.png" class="quarto-figure quarto-figure-center" style="width:100.0%">
+<div style="font-size: 0.8em;">
+PDC=percentage of days covered
 </div>
 </div>
 </div><div class="footer">
@@ -244,33 +201,16 @@ PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Byrd <em>et al.</em> JAIDS. 2019</p></li><li id="fn2"><p>Adimora, Cole and Eron CID 2017</p></li></ol></aside></section>
-<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
-</section>
-<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
-<ul>
-<li>Can this be evaluated in a single trial?</li>
-</ul>
-</section>
-<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence-2" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
-<ul>
-<li><p>Can this be evaluated in a single trial?</p></li>
-<li><p>Does it have an impact on how well medications perform?</p></li>
-</ul>
-</section>
 <section id="rcts-are-the-gold-standard-for-estimating-treatment-effects" class="slide level2">
 <h2>RCTs are the gold standard for estimating treatment effects</h2>
 <ul>
-<li><p>Require clear enrollment criteria</p></li>
-<li><p>Unabmiguous intervention protocol</p></li>
-<li><p>Exchangeability: <span class="math inline">\(Y^{a=1}, Y^{a=0}\perp\!\!\!\perp A\)</span> for <span class="math inline">\(A \in \{0,1\}\)</span></p></li>
-<li><p>Consistency<sup>1</sup>: <span class="math inline">\(Y=Y^{a=1}A+Y^{a=0}(1-A)\)</span></p></li>
+<li><p>Require clear enrollment criteria; Unambiguous intervention protocol</p></li>
+<li><p>Exchangeability<sup>1</sup>: <span class="math inline">\(P[Y^{a}=1|A=1]=P[Y^{a}=1|A=0]=P[Y^a=1]\)</span></p></li>
+<li><p>Consistency<sup>2</sup>: <span class="math inline">\(Y=Y^{a=1}A+Y^{a=0}(1-A)\)</span></p></li>
 <li><p>Positivity: <span class="math inline">\(P[A=a]&gt;0\)</span></p></li>
 </ul>
-<p><small>where <span class="math inline">\(Y=\)</span> outcome, <span class="math inline">\(Y^{a}=\)</span> is counterfactual outcome, <span class="math inline">\(A=\)</span> treatment</small></p>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>treatment variation irrelevance</p></li></ol></aside></section></section>
+<p><medium>where <span class="math inline">\(Y=\)</span> outcome, <span class="math inline">\(Y^{a}=\)</span> is counterfactual outcome, <span class="math inline">\(A=\)</span> treatment</medium></p>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>also <span class="math inline">\(Y^{a=1}, Y^{a=0}\perp\!\!\!\perp A\)</span> for <span class="math inline">\(A \in \{0,1\}\)</span></p></li><li id="fn4"><p>treatment variation irrelevance</p></li></ol></aside></section></section>
 <section>
 <section id="estimands-in-rcts" class="title-slide slide level1 center">
 <h1>Estimands in RCTs</h1>
@@ -278,113 +218,67 @@ PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI
 </section>
 <section id="there-are-many-estimands-available-in-an-rct" class="slide level2">
 <h2>There are many estimands available in an RCT</h2>
+<div style="font-size: 0.8em;">
 <ul>
-<li>The main ones are:
-<ol type="1">
-<li>The Intent-to-Treat</li>
-<li>The Modified Intent-to-Treat</li>
-<li>The Per Protcol</li>
-</ol></li>
+<li>Two primary ones are Intent to treat (ITT) and per protocol (PP)</li>
 </ul>
-</section>
-<section id="intent-to-treat" class="slide level2">
-<h2>Intent to Treat</h2>
-<p>Analyzes outcomes based on randomization assignment not treatment.</p>
-<ul>
-<li>measures the effect of treatment assignment on outcomes</li>
-<li><span class="math inline">\(E\left[Y^{r=1}- Y^{r=0}\right]\)</span></li>
-</ul>
-
-<img data-src="images/itt.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="the-modified-intent-to-treat" class="slide level2">
-<h2>The Modified Intent-to-Treat</h2>
-<p>Restricts analysis to those that start assigned treatment</p>
-<ul>
-<li>measures the effect of randomization and initiating treatment on outcomes</li>
-<li><span class="math inline">\(E\left[Y^{r=1, a_0=1}- Y^{r=0, a_0=0}\right]\)</span></li>
-</ul>
-
-<img data-src="images/mitt.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="per-protocol" class="slide level2">
-<h2>Per Protocol</h2>
-<p>Evaluates the effect of randomization and protocol adherence</p>
-<ul>
-<li><span class="math inline">\(E\left[Y^{r=1, \bar{a}=1}- Y^{r=0, \bar{a}=0}\right]\)</span></li>
-<li><strong><em>Accounts for adherence</em></strong></li>
-</ul>
-
-<img data-src="images/pp.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<table class="caption-top">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">ITT</th>
+<th style="text-align: left;">PP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Estimand</td>
+<td style="text-align: left;"><span class="math inline">\(E\left[Y^{r=1}- Y^{r=0}\right]\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(E\left[Y^{r=1, \bar{a}=1}- Y^{r=0, \bar{a}=0}\right]\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Effect being measured</td>
+<td style="text-align: left;">treatment assignment</td>
+<td style="text-align: left;">treatment assignment and protocol adherence</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Analyzes based on random assignment</td>
+<td style="text-align: left;">✅</td>
+<td style="text-align: left;">✅</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Analyzes only those who initiate</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✅</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Analyzes only those who adhere to assignment<sup>1</sup></td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✅</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn5"><p>Frequently done by exluding those not adhering, see Dodd et al.&nbsp;Trials 2012; Cole et al.&nbsp;JAMA Net. Open 2023</p></li></ol></aside></section>
 <section id="per-protocol-effects-can-be-biased" class="slide level2">
 <h2>Per-protocol effects can be biased</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Estimation of th per-protocol effect is much like an observational study</li>
+<li>Estimation of the per-protocol effect is much like an observational study</li>
 <li>Thus, bias can arise from non-exchangeability, non-consistency, or non-positivity</li>
-<li>Frequently done by exluding those not adhering<sup>1</sup></li>
+<li>Excluding those that dont adhere induces bias</li>
+<li>Per protocol can deviate from ITT when deviation accounted for<sup>1</sup></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/pp_dag.png"> Bias be addressed with modern methods: inverse probability of censoring weighting (IPCW) or the parametric g-formula</p>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn4"><p> Dodd et al.&nbsp;Trials 2012; Cole et al.&nbsp;JAMA Net. Open 2023, Aim 1 of this dissertation</p></li></ol></aside></section>
-<section id="per-protocol-effects-differ-from-the-itt" class="slide level2">
-<h2>Per-protocol effects differ from the ITT</h2>
-<table class="caption-top">
-<caption>Select Per protocol reanalyses</caption>
-<colgroup>
-<col style="width: 37%">
-<col style="width: 17%">
-<col style="width: 20%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: left;">Disease</th>
-<th style="text-align: left;">Methods</th>
-<th style="text-align: left;">Change from ITT</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cain and Cole 2009 <em>Stat Med</em></td>
-<td style="text-align: left;">HIV Tx</td>
-<td style="text-align: left;">IPW</td>
-<td style="text-align: left;">Further from Null</td>
-</tr>
-<tr class="even">
-<td>Lu <em>et el.</em> 2019 <em>Trials</em></td>
-<td style="text-align: left;">HIV Tx</td>
-<td style="text-align: left;">IPW</td>
-<td style="text-align: left;">No Change</td>
-</tr>
-<tr class="odd">
-<td>Lodi <em>et al.</em> 2016 <em>AIDS</em></td>
-<td style="text-align: left;">HIV Tx</td>
-<td style="text-align: left;">G-formula</td>
-<td style="text-align: left;">Further from Null</td>
-</tr>
-<tr class="even">
-<td>Lodi <em>et al.</em> 2021 <em>Trials</em></td>
-<td style="text-align: left;">HIV Tx</td>
-<td style="text-align: left;">IPW</td>
-<td style="text-align: left;">Further from Null</td>
-</tr>
-<tr class="odd">
-<td>Naimi <em>et al.</em> 2021 <em>Ann Int Med</em></td>
-<td style="text-align: left;">Obstetrics</td>
-<td style="text-align: left;">G-Formula</td>
-<td style="text-align: left;">Further from Null</td>
-</tr>
-<tr class="even">
-<td>Szmulewicz <em>et al.</em> 2023 <em>J Psychopharm</em></td>
-<td style="text-align: left;">Mental Health</td>
-<td style="text-align: left;">IPW</td>
-<td style="text-align: left;">Effect Reversal</td>
-</tr>
-</tbody>
-</table>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn6"><p>Cain and Cole 2009, Lu <em>et el.</em> 2019 , Lodi <em>et al.</em> 2016, Lodi <em>et al.</em> 2021 , Naimi <em>et al.</em> 2021, Szmulewicz <em>et al.</em> 2023</p></li></ol></aside></section>
 <section id="there-is-more-than-one-per-protocol-effect" class="slide level2">
 <h2>There is more than one per protocol effect</h2>
 <div class="columns">
@@ -411,15 +305,41 @@ PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI
 <span class="math inline">\(r=\)</span>randomization; <span class="math inline">\(\bar{a}=\)</span>hx of tx
 </div>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn5"><p>Epidemiology 2020</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn7"><p>Epidemiology 2020</p></li></ol></aside></section>
+<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
+</section>
+<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
+<ul>
+<li>Can this be evaluated in a single trial?</li>
+</ul>
+</section>
+<section id="can-the-efficacy-of-treatment-be-evaluated-under-multiple-scenarios-of-non-adherence-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Can the efficacy of treatment be evaluated under multiple scenarios of non adherence?</h2>
+<ul>
+<li><p>Can this be evaluated in a single trial?</p></li>
+<li><p>Does it have an impact on how well medications perform?</p></li>
+</ul>
+</section></section>
 <section>
 <section id="aims" class="title-slide slide level1 center">
 <h1>Aims</h1>
+
+</section>
+<section id="aim-1" class="slide level2">
+<h2>Aim 1:</h2>
 <ul>
-<li><p>Determine how per protocol analyses are being done in the literature</p></li>
-<li><p>Evaluate the effect of multiple definitions of per protocol effects</p></li>
+<li><p>Review of Phase 3/4 RCTs from Lancet, NEJM, JAMA, BMJ, Nature Med from 2020-2025</p></li>
+<li><p>Evaluated how often per protocol analyses 1) were mentioned 2) were done accounting for adherence</p></li>
+<li><p>Key Findings:</p>
+<ul>
+<li><p>Of the 114 studies, 45 (40%) had some form of per-protocol analysis reported;</p></li>
+<li><p>only 2 (6.5%) noted the number/proportion of missed doses</p></li>
+<li><p>only 1 used methods to account for adherence</p></li>
+<li><p>Industry funded had a lower proportion of per-protocol analyses compared to those with no industry funding (10% versus 66%)</p></li>
+</ul></li>
 </ul>
-<p>ONE SLIDE SUMMARY OF AIM 1 HERE</p>
 </section>
 <section id="aim-2" class="slide level2">
 <h2>Aim 2:</h2>
@@ -456,7 +376,7 @@ PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI
 <li>Substance abuse or serious illness; psychiatric disease, incarceration, conduction abnormality.</li>
 </ul>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn6"><p>Sax <em>et el.</em> 2009 NEJM</p></li><li id="fn7"><p>Daar <em>et al.</em> 2011 Annals of Internal Medicine</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn8"><p>Sax <em>et el.</em> 2009 NEJM</p></li><li id="fn9"><p>Daar <em>et al.</em> 2011 Annals of Internal Medicine</p></li></ol></aside></section>
 <section id="exposures-of-interest" class="slide level2">
 <h2>Exposures of interest</h2>
 <div class="columns">
@@ -475,8 +395,8 @@ PDC=percentage of days covered, INSTI=integrase strand transfer inhibitor, NNRTI
 <li><p>Medication self administered</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
-<img data-src="images/drugs_select.png" class="quarto-figure quarto-figure-left" style="width:70.0%">
-<div style="font-size: 0.8em">
+<img data-src="images/drugs_select.png" class="quarto-figure quarto-figure-left" style="width:80.0%">
+<div style="font-size: 0.7em">
 Our drugs of interest target reverse transcription
 </div>
 </div><div class="footer">
@@ -544,9 +464,9 @@ Our drugs of interest target reverse transcription
 <div class="columns">
 <div class="column" style="width:55%;">
 <ol type="1">
-<li>Proportion of participants that deviated from the assigned protocol over multiple definitions of protocol deviation</li>
+<li>Proportion of participants that deviated from the assigned protocol over multiple definitions of protocol deviation <span class="math display">\[\downarrow\]</span></li>
 </ol>
-<div style="font-size: 0.7em;margin-top: 20px;">
+<div style="font-size: 0.7em;">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -574,28 +494,23 @@ Our drugs of interest target reverse transcription
 </tbody>
 </table>
 </div>
-</div><div class="column" style="width:4%;">
-
+</div><div class="column vertical-divider" style="width:4%;">
+<p><img data-src="images/bar.png" style="width:50.0%"></p>
 </div><div class="column" style="width:41%;">
-<p>2.) Composite of all-cause mortality or virologic failure</p>
-<div style="margin-top: 80px;">
+2.) Composite of all-cause mortality or virologic failure
+<div style="margin-top: 110px;">
 
 </div>
+<p><span class="math display">\[\downarrow\]</span></p>
 <p>Virologic Failure defined as:</p>
 <ul>
-<li>plasma HIV-1 RNA level ≥1000 copies /mL between 16 weeks and 24 weeks or</li>
-<li>≥200 copies/mL at or after 24 weeks</li>
+<li>HIV-1 RNA level ≥1000 copies /mL between 16 and 24 wks or</li>
+<li>≥200 copies/mL at or after 24 wks</li>
 </ul>
 </div></div>
 <div class="footer">
 
 </div>
-</section>
-<section id="assumed-data-generating-mechanism" class="slide level2">
-<h2>Assumed Data Generating Mechanism</h2>
-
-<img data-src="images/aim2_dag.png" style="display:block; margin-left:auto; margin-right:auto;;width:40.0%" class="r-stretch"><p><span class="math inline">\(j\)</span>: follow up time, <span class="math inline">\(\mathbf{L}_j\)</span>: vector of covariates at follow up time <span class="math inline">\(j\)</span>,<br>
-<span class="math inline">\(A_j\)</span> : treatment at follow up time <span class="math inline">\(j\)</span>, <span class="math inline">\(R\)</span>: randomization, <span class="math inline">\(Y\)</span> : viral failure or death</p>
 </section>
 <section id="covariates" class="slide level2">
 <h2>Covariates</h2>
@@ -616,17 +531,18 @@ Our drugs of interest target reverse transcription
 <li>log<span class="math inline">\(_{10}\)</span> HIV-1 RNA</li>
 </ul>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn8"><p>evaluated at 8, 24, 48, 72, 96, and q24 weeks</p></li></ol></aside></section>
+<p><img src="images/pp_dag.png" style="position:absolute; bottom:0; right:0; width:800px;"></p>
+<aside><ol class="aside-footnotes"><li id="fn10"><p>evaluated at 8, 24, 48, 72, 96, and q24 weeks</p></li></ol></aside></section>
 <section id="analysis" class="slide level2">
 <h2>Analysis</h2>
 <p>Inverse Probability of Censoring Weighted Kaplan Meier Estimator</p>
 <p><span class="math display">\[
-\widehat{S}_T^\omega(t \mid r)=\prod_{\left\{j: t_j \leq t\right\}}\left(1-\frac{\sum_{i=1}^n I\left(X_i=t_j\right) \widehat{\omega}_{i j}^c I\left(R_i=r\right) Y_i}{\left\{\sum_{i=1}^n I\left(X_i \geq t_j\right) \widehat{\omega}_{i t}^c I\left(R_k=r\right)\right\}}\right)
+\widehat{S}_{T}^\omega(t \mid r)=\prod_{\left\{j: t_j \leq t\right\}}\left(1-\frac{\sum_{i=1}^n I\left(X_i=t_j\right) \widehat{\omega}_{i j}^c I\left(R_i=r\right) Y_i}{\left\{\sum_{i=1}^n I\left(X_i \geq t_j\right) \widehat{\omega}_{i j}^c I\left(R_i=r\right)\right\}}\right)
 \]</span></p>
 <ul>
 <li>pooled logistic regression to estimate the numerator and denominator of stabilized weights</li>
-<li>risk at 48 and 96 weeks</li>
-<li>Sandwich variance estimator to estimate standard error</li>
+<li><span class="math inline">\(t_j={48,96}\)</span></li>
+<li>Robust Variance estimator for SE</li>
 </ul>
 </section>
 <section id="a-note-on-data-structure" class="slide level2">
@@ -748,12 +664,12 @@ Our drugs of interest target reverse transcription
 <section id="the-population-of-actg5202" class="slide level2">
 <h2>The population of ACTG5202</h2>
 <div style="font-size: 0.6em; margin-top: 20px;">
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 23%">
-<col style="width: 23%">
-<col style="width: 23%">
+<col style="width: 35%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -777,46 +693,46 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">38 [31, 45]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Male (%)</td>
-<td style="text-align: left;">755 (81.4)</td>
-<td style="text-align: left;">780 (84.0)</td>
-<td style="text-align: left;">1535 (82.7)</td>
+<td style="text-align: left;">Male % (n)</td>
+<td style="text-align: left;">81 (755)</td>
+<td style="text-align: left;">84 (780)</td>
+<td style="text-align: left;">83 (1535)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Race (%)</td>
+<td style="text-align: left;">Race % (n)</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Asian</td>
-<td style="text-align: left;">11 (1.2)</td>
-<td style="text-align: left;">15 (1.6)</td>
-<td style="text-align: left;">26 (1.4)</td>
+<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Asian</span></td>
+<td style="text-align: left;">1 (11)</td>
+<td style="text-align: left;">2 (15)</td>
+<td style="text-align: left;">1 (26)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Black or African American</td>
-<td style="text-align: left;">321 (34.6)</td>
-<td style="text-align: left;">313 (33.7)</td>
-<td style="text-align: left;">634 (34.1)</td>
+<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Black or African American </span></td>
+<td style="text-align: left;">35 (321)</td>
+<td style="text-align: left;">34 (313)</td>
+<td style="text-align: left;">34 (634)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">white</td>
-<td style="text-align: left;">546 (58.8)</td>
-<td style="text-align: left;">544 (58.6)</td>
-<td style="text-align: left;">1090 (58.7)</td>
+<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">white</span></td>
+<td style="text-align: left;">59 (546)</td>
+<td style="text-align: left;">59 (544)</td>
+<td style="text-align: left;">59 (1090)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Other</td>
-<td style="text-align: left;">50 (5.4)</td>
-<td style="text-align: left;">57 (6.1)</td>
-<td style="text-align: left;">107 (5.8)</td>
+<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Other</span></td>
+<td style="text-align: left;">5 (50)</td>
+<td style="text-align: left;">6 (57)</td>
+<td style="text-align: left;">6 (107)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Not Hispanic or Latino (%)</td>
-<td style="text-align: left;">714 (76.9)</td>
-<td style="text-align: left;">714 (76.9)</td>
-<td style="text-align: left;">1428 (76.9)</td>
+<td style="text-align: left;">Not Hispanic or Latino % (n)</td>
+<td style="text-align: left;">77 (714)</td>
+<td style="text-align: left;">77 (714)</td>
+<td style="text-align: left;">77 (1428)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Baseline log RNA (median[IQR])</td>
@@ -831,16 +747,16 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">230 [90, 334]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">History of AIDS (%)</td>
-<td style="text-align: left;">172 (18.5)</td>
-<td style="text-align: left;">140 (15.1)</td>
-<td style="text-align: left;">312 (16.8)</td>
+<td style="text-align: left;">History of AIDS % (n)</td>
+<td style="text-align: left;">19 (172)</td>
+<td style="text-align: left;">15 (140)</td>
+<td style="text-align: left;">17 (312)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100\)</span>K copies/ mL (%)</td>
-<td style="text-align: left;">398 (42.9)</td>
-<td style="text-align: left;">399 (42.9)</td>
-<td style="text-align: left;">797 (42.9)</td>
+<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100\)</span>K copies/ mL %(n)</td>
+<td style="text-align: left;">43 (398)</td>
+<td style="text-align: left;">43 (399)</td>
+<td style="text-align: left;">43 (797)</td>
 </tr>
 </tbody>
 </table>
@@ -881,46 +797,46 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">36 [28, 43]</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Male (%)</td>
-<td style="text-align: left;">1267 (83.4)</td>
-<td style="text-align: left;">268 (79.3)</td>
-<td style="text-align: left;">43 (84.3)</td>
+<td style="text-align: left;">Male % (n)</td>
+<td style="text-align: left;">83 (1267)</td>
+<td style="text-align: left;">79 (268)</td>
+<td style="text-align: left;">84 (43)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Race (%)</td>
+<td style="text-align: left;">Race % (n)</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Asian</span></td>
-<td style="text-align: left;">22 (1.4)</td>
-<td style="text-align: left;">4 (1.2)</td>
-<td style="text-align: left;">0 (0.0)</td>
+<td style="text-align: left;">1 (22)</td>
+<td style="text-align: left;">1 (4)</td>
+<td style="text-align: left;">0 (0)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Black or African American</span></td>
-<td style="text-align: left;">471 (31.0)</td>
-<td style="text-align: left;">163 (48.2)</td>
-<td style="text-align: left;">28 (54.9)</td>
+<td style="text-align: left;">31 (471)</td>
+<td style="text-align: left;">48 (163)</td>
+<td style="text-align: left;">55 (28)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">White</span></td>
-<td style="text-align: left;">937 (61.7)</td>
-<td style="text-align: left;">153 (45.3)</td>
-<td style="text-align: left;">20 (39.2)</td>
+<td style="text-align: left;">62 (937)</td>
+<td style="text-align: left;">45 (153)</td>
+<td style="text-align: left;">39 (20)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Other</span></td>
-<td style="text-align: left;">89 (5.9)</td>
-<td style="text-align: left;">18 (5.3)</td>
-<td style="text-align: left;">3 (5.9)</td>
+<td style="text-align: left;">6 (89)</td>
+<td style="text-align: left;">5 (18)</td>
+<td style="text-align: left;">6 (3)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Not Hispanic or Latino (%)</td>
-<td style="text-align: left;">1152 (75.8)</td>
-<td style="text-align: left;">276 (81.7)</td>
-<td style="text-align: left;">45 (88.2)</td>
+<td style="text-align: left;">Not Hispanic or Latino % (n)</td>
+<td style="text-align: left;">76 (1152)</td>
+<td style="text-align: left;">82 (276)</td>
+<td style="text-align: left;">88 (45)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Baseline log RNA (median[IQR])</td>
@@ -935,34 +851,34 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">223 [81, 336]</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">History of AIDS (%)</td>
-<td style="text-align: left;">257 (16.9)</td>
-<td style="text-align: left;">55 (16.3)</td>
-<td style="text-align: left;">9 (17.6)</td>
+<td style="text-align: left;">History of AIDS % (n)</td>
+<td style="text-align: left;">16.9 (257)</td>
+<td style="text-align: left;">16 (55)</td>
+<td style="text-align: left;">18 (9)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100,000\)</span> copies/mL (%)</td>
-<td style="text-align: left;">676 (44.5)</td>
-<td style="text-align: left;">121 (35.8)</td>
-<td style="text-align: left;">13 (25.5)</td>
+<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100,000\)</span> copies/mL % (n)</td>
+<td style="text-align: left;">45 (676)</td>
+<td style="text-align: left;">36 (121)</td>
+<td style="text-align: left;">26 (13)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Treatment Assignment</td>
+<td style="text-align: left;">Treatment Assignment % (n)</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">TDF/FTC</span></td>
-<td style="text-align: left;">776 (51.1)</td>
-<td style="text-align: left;">153 (45.3)</td>
-<td style="text-align: left;">23 (45.1)</td>
+<td style="text-align: left;">51 (776)</td>
+<td style="text-align: left;">45 (153)</td>
+<td style="text-align: left;">45 (23)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span style="display:block;padding-left:1.5em;">ABC/3TC</span></td>
-<td style="text-align: left;">743 (48.9)</td>
-<td style="text-align: left;">185 (54.7)</td>
-<td style="text-align: left;">28 (54.9)</td>
+<td style="text-align: left;">49 (743)</td>
+<td style="text-align: left;">55 (185)</td>
+<td style="text-align: left;">55 (28)</td>
 </tr>
 </tbody>
 </table>
@@ -985,8 +901,8 @@ Our drugs of interest target reverse transcription
 
 </div>
 </section>
-<section id="there-was-no-difference-in-risks-in-missed-dose-protocols" class="slide level2">
-<h2>There was no difference in risks in missed dose protocols</h2>
+<section id="there-was-no-difference-across-missed-dose-protocols" class="slide level2">
+<h2>There was no difference across missed dose protocols</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="images/main_analysis.png"></p>
@@ -1175,8 +1091,13 @@ So we completed a sensitivity analysis
 </section>
 <section id="sensitivity-analysis-did-not-change-the-results" class="slide level2">
 <h2>Sensitivity analysis did not change the results</h2>
-
-<img data-src="images/sens_analysis.png" style="display:block; margin-left:auto; margin-right:auto;" class="r-stretch"></section></section>
+<div class="columns">
+<div class="column">
+<p><img data-src="images/sens_analysis.png" style="display:block; margin-left:auto; margin-right:auto;"></p>
+</div><div class="column">
+<p><img data-src="images/main_analysis.png"></p>
+</div></div>
+</section></section>
 <section>
 <section id="wrapping-up" class="title-slide slide level1 center">
 <h1>Wrapping up</h1>
@@ -1188,7 +1109,7 @@ So we completed a sensitivity analysis
 <li><p>Per protocol effects can be varied, but are frequently done poorly through exclusion<sup>1</sup></p></li>
 <li><p>In the ACTG5202 estimates for different levels of missed doses did not differ from the ITT</p></li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn9"><p>data not described in this presentation; see full dissertation for details</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn11"><p>data not described in this presentation; see full dissertation for details</p></li></ol></aside></section>
 <section id="we-had-limitations-in-our-study" class="slide level2">
 <h2>We had limitations in our study</h2>
 <ul>
@@ -1234,6 +1155,7 @@ updateCountdown(); // initial call
 </script>
 </section>
 
+<section>
 <section id="acknowledgments" class="title-slide slide level1 center">
 <h1>Acknowledgments</h1>
 <ul>
@@ -1245,9 +1167,72 @@ updateCountdown(); // initial call
 <li><p>My Epi cohort and all my instructors</p></li>
 <li><p>My amazing wife and daughters, Margo, Emma, and Lucy</p></li>
 </ul>
-
 </section>
+<section id="per-protocol-effects-differ-from-the-itt" class="slide level2">
+<h2>Per-protocol effects differ from the ITT</h2>
+<table class="caption-top">
+<caption>Select Per protocol reanalyses</caption>
+<colgroup>
+<col style="width: 37%">
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Disease</th>
+<th style="text-align: left;">Methods</th>
+<th style="text-align: left;">Change from ITT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cain and Cole 2009 <em>Stat Med</em></td>
+<td style="text-align: left;">HIV Tx</td>
+<td style="text-align: left;">IPW</td>
+<td style="text-align: left;">Further from Null</td>
+</tr>
+<tr class="even">
+<td>Lu <em>et el.</em> 2019 <em>Trials</em></td>
+<td style="text-align: left;">HIV Tx</td>
+<td style="text-align: left;">IPW</td>
+<td style="text-align: left;">No Change</td>
+</tr>
+<tr class="odd">
+<td>Lodi <em>et al.</em> 2016 <em>AIDS</em></td>
+<td style="text-align: left;">HIV Tx</td>
+<td style="text-align: left;">G-formula</td>
+<td style="text-align: left;">Further from Null</td>
+</tr>
+<tr class="even">
+<td>Lodi <em>et al.</em> 2021 <em>Trials</em></td>
+<td style="text-align: left;">HIV Tx</td>
+<td style="text-align: left;">IPW</td>
+<td style="text-align: left;">Further from Null</td>
+</tr>
+<tr class="odd">
+<td>Naimi <em>et al.</em> 2021 <em>Ann Int Med</em></td>
+<td style="text-align: left;">Obstetrics</td>
+<td style="text-align: left;">G-Formula</td>
+<td style="text-align: left;">Further from Null</td>
+</tr>
+<tr class="even">
+<td>Szmulewicz <em>et al.</em> 2023 <em>J Psychopharm</em></td>
+<td style="text-align: left;">Mental Health</td>
+<td style="text-align: left;">IPW</td>
+<td style="text-align: left;">Effect Reversal</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="assumed-data-generating-mechanism" class="slide level2">
+<h2>Assumed Data Generating Mechanism</h2>
 
+<img data-src="images/aim2_dag.png" style="display:block; margin-left:auto; margin-right:auto;;width:40.0%" class="r-stretch"><p><span class="math inline">\(j\)</span>: follow up time, <span class="math inline">\(\mathbf{L}_j\)</span>: vector of covariates at follow up time <span class="math inline">\(j\)</span>,<br>
+<span class="math inline">\(A_j\)</span> : treatment at follow up time <span class="math inline">\(j\)</span>, <span class="math inline">\(R\)</span>: randomization, <span class="math inline">\(Y\)</span> : viral failure or death</p>
+
+</section></section>
 
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
