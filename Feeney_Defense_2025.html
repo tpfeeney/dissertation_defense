@@ -535,13 +535,13 @@ Our drugs of interest target reverse transcription
 <aside><ol class="aside-footnotes"><li id="fn10"><p>evaluated at 8, 24, 48, 72, 96, and q24 weeks</p></li></ol></aside></section>
 <section id="analysis" class="slide level2">
 <h2>Analysis</h2>
-<p>Inverse Probability of Censoring Weighted Kaplan Meier Estimator</p>
+<p>Inverse Probability of Censoring Weighted Kaplan-Meier Estimator</p>
 <p><span class="math display">\[
 \widehat{S}_{T}^\omega(t \mid r)=\prod_{\left\{j: t_j \leq t\right\}}\left(1-\frac{\sum_{i=1}^n I\left(X_i=t_j\right) \widehat{\omega}_{i j}^c I\left(R_i=r\right) Y_i}{\left\{\sum_{i=1}^n I\left(X_i \geq t_j\right) \widehat{\omega}_{i j}^c I\left(R_i=r\right)\right\}}\right)
 \]</span></p>
 <ul>
 <li>pooled logistic regression to estimate the numerator and denominator of stabilized weights</li>
-<li><span class="math inline">\(t_j={48,96}\)</span></li>
+<li>Risk differences at 48 and 96 weeks</li>
 <li>Robust Variance estimator for SE</li>
 </ul>
 </section>
@@ -791,16 +791,16 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">51</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Age (median[IQR])</td>
-<td style="text-align: left;">38 [31, 46]</td>
-<td style="text-align: left;">37 [30, 43]</td>
-<td style="text-align: left;">36 [28, 43]</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">Age (median[IQR]) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">38 [31, 46]</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">37 [30, 43]</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">36 [28, 43]</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Male % (n)</td>
-<td style="text-align: left;">83 (1267)</td>
-<td style="text-align: left;">79 (268)</td>
-<td style="text-align: left;">84 (43)</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">Male % (n)</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">83 (1267)</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">79 (268)</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">84 (43)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Race % (n)</td>
@@ -809,13 +809,13 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Asian</span></td>
-<td style="text-align: left;">1 (22)</td>
-<td style="text-align: left;">1 (4)</td>
-<td style="text-align: left;">0 (0)</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1"><span style="display:block;padding-left:1.5em;">Asian</span></span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">1 (22)</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">1 (4)</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">0 (0)</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Black or African American</span></td>
+<td style="text-align: left;"><span style="display:block;padding-left:1.5em;"> Black or African American</span></td>
 <td style="text-align: left;">31 (471)</td>
 <td style="text-align: left;">48 (163)</td>
 <td style="text-align: left;">55 (28)</td>
@@ -827,10 +827,10 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">39 (20)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span style="display:block;padding-left:1.5em;">Other</span></td>
-<td style="text-align: left;">6 (89)</td>
-<td style="text-align: left;">5 (18)</td>
-<td style="text-align: left;">6 (3)</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1"><span style="display:block;padding-left:1.5em;">Other</span></span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">6 (89) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">5 (18) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">6 (3)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Not Hispanic or Latino % (n)</td>
@@ -839,22 +839,22 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">88 (45)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Baseline log RNA (median[IQR])</td>
-<td style="text-align: left;">4.7 [4.4, 5.1]</td>
-<td style="text-align: left;">4.6 [4.3, 4.9]</td>
-<td style="text-align: left;">4.5 [4.2, 5]</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">Baseline log RNA (median[IQR])</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">4.7 [4.4, 5.1] </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">4.6 [4.3, 4.9]</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1"> 4.5 [4.2, 5] </span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Baseline CD4 (median[IQR])</td>
-<td style="text-align: left;">229 [87, 333]</td>
-<td style="text-align: left;">231 [113, 336]</td>
-<td style="text-align: left;">223 [81, 336]</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">Baseline CD4 (median[IQR])</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">229 [87, 333]</span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">231 [113, 336] </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">223 [81, 336]</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">History of AIDS % (n)</td>
-<td style="text-align: left;">16.9 (257)</td>
-<td style="text-align: left;">16 (55)</td>
-<td style="text-align: left;">18 (9)</td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">History of AIDS % (n) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1"> 16.9 (257) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1">16 (55) </span></td>
+<td style="text-align: left;"><span class="fragment fade-out" data-fragment-index="1"> 18 (9) </span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100,000\)</span> copies/mL % (n)</td>
@@ -1113,9 +1113,19 @@ So we completed a sensitivity analysis
 <section id="we-had-limitations-in-our-study" class="slide level2">
 <h2>We had limitations in our study</h2>
 <ul>
-<li><p>We only used a subset of possible adherence definitions</p></li>
-<li><p>Limited adherence data</p></li>
-<li><p>Limited covariate set</p></li>
+<li>We only used a subset of possible adherence definitions; instead could use:
+<ul>
+<li>Time until first dose</li>
+<li>Number of doses within a specified time frame</li>
+<li>etc.</li>
+</ul></li>
+<li>Limited adherence data
+<ul>
+<li>MEMS</li>
+<li>Drug serum concentration</li>
+<li>Daily dosing diaries</li>
+</ul></li>
+<li>Limited covariate set</li>
 </ul>
 </section></section>
 <section id="questions" class="title-slide slide level1 center">
@@ -1158,15 +1168,25 @@ updateCountdown(); // initial call
 <section>
 <section id="acknowledgments" class="title-slide slide level1 center">
 <h1>Acknowledgments</h1>
+<div class="columns">
+<div class="column" style="width:70%;">
 <ul>
 <li><p>ACTG5202 Patients and study team</p></li>
+<li><p>My amazing wife, Margo, and daughters, Emma and Lucy</p></li>
 <li><p>My Committee: Steve Cole, Jess Edwards, Bonnie Shook-Sa, Charlie Poole, David Wohl</p></li>
-<li><p>UNC Dept of Epi</p></li>
 <li><p>Paul Zivich</p></li>
-<li><p>Cole lab members: Mark Klose, Catie Weiner, Catherine Li</p></li>
+<li><p>Cole lab members: Mark Klose, Catie Weiner, Catherine Li and alumni Jackie Rudolph</p></li>
+<li><p>UNC Dept of Epi</p></li>
 <li><p>My Epi cohort and all my instructors</p></li>
-<li><p>My amazing wife and daughters, Margo, Emma, and Lucy</p></li>
 </ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/kids.png"></p>
+<figcaption>*wife not shown</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="per-protocol-effects-differ-from-the-itt" class="slide level2">
 <h2>Per-protocol effects differ from the ITT</h2>

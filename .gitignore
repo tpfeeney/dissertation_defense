@@ -5,6 +5,9 @@
 !.gitignore
 !*.html
 !images/
+!*.pdf
+!Feeney_Defense_2025_files/
+
 
 # And don't ignore files inside images/
 !images/**
