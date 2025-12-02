@@ -11,7 +11,7 @@
 
   <meta name="author" content="Timothy Feeney">
   <meta name="dcterms.date" content="2025-12-03">
-  <title>Improving Inferences from Randomized Trials.</title>
+  <title>Improving Inferences from Randomized Trials</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,8 +129,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Improving Inferences from Randomized Trials.</h1>
-  <p class="subtitle">Using per-protocol analyses to estimate effects of HIV treatment.</p>
+  <h1 class="title">Improving Inferences from Randomized Trials</h1>
+  <p class="subtitle">Using per-protocol analyses to estimate effects of HIV treatment</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -152,7 +152,6 @@ Timothy Feeney
 <li><a href="#/wrapping-up" id="/toc-wrapping-up">Wrapping up</a></li>
 <li><a href="#/questions" id="/toc-questions">Questions?</a></li>
 <li><a href="#/acknowledgments" id="/toc-acknowledgments">Acknowledgments</a></li>
-<li><a href="#/acknowledgments-1" id="/toc-acknowledgments-1">Acknowledgments</a></li>
 </ul>
 </nav>
 </section>
@@ -182,7 +181,7 @@ Timothy Feeney
 <ul>
 <li><p>Majority report adherence levels &lt;90%; plurality &lt;80%.</p></li>
 <li><p>Adherence needed to achieve viral suppression varies by treatment.<sup>1</sup></p></li>
-<li><p>Blanket recommendations fail to capture these differences.</p></li>
+<li><p>Blanket recommendations fail to capture these differences</p></li>
 <li><p>Understanding of how adherence impacts efficacy is critical<sup>2</sup> for</p>
 <ul>
 <li>Devloping New Treatments</li>
@@ -375,7 +374,7 @@ PDC=percentage of days covered
 <li>On immuno- or chemotherapy</li>
 <li>Other HIV therapy or investigational drugs <span class="math inline">\(\leq 30\)</span> days prior to screening</li>
 <li>Allergies to study drugs</li>
-<li>Substance abuse or serious illness; psychiatric disease, incarceration, conduction abnormality.</li>
+<li>Substance abuse or serious illness; psychiatric disease, incarceration, conduction abnormality</li>
 </ul>
 </div></div>
 <aside><ol class="aside-footnotes"><li id="fn8"><p>Sax <em>et el.</em> 2009 NEJM</p></li><li id="fn9"><p>Daar <em>et al.</em> 2011 Annals of Internal Medicine</p></li></ol></aside></section>
@@ -394,7 +393,7 @@ PDC=percentage of days covered
 <li><span class="math inline">\(&lt; 100,000\)</span> copies/mL</li>
 <li><span class="math inline">\(\geq 100,000\)</span> copies/mL</li>
 </ul></li>
-<li><p>Medication self administered, single dose daily.</p></li>
+<li><p>Medication self administered, single dose daily</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <img data-src="images/drugs_select.png" class="quarto-figure quarto-figure-left" style="width:80.0%">
@@ -409,7 +408,7 @@ Our drugs of interest target reverse transcription
 <section id="adherence" class="slide level2">
 <h2>Adherence</h2>
 <ul>
-<li>Adherence evaluated in-person at 8, 24, 48, 72, 96, then every 24 weeks and either at the final study evaluation or after virologic failure.</li>
+<li>Adherence evaluated in-person at 8, 24, 48, 72, 96, then every 24 weeks and either at the final study evaluation or after virologic failure</li>
 </ul>
 <table class="caption-top">
 <colgroup>
@@ -459,6 +458,45 @@ Our drugs of interest target reverse transcription
 </table>
 <div class="footer">
 
+</div>
+</section>
+<section id="protocols" class="slide level2">
+<h2>Protocols</h2>
+<div style="font-size: 0.9em;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Adherence</strong></th>
+<th style="text-align: left;"><strong>Definition of Variable</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1 dose missed protocol</td>
+<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 1 dose or is LTFU</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2 doses missed protocol</td>
+<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 2 dose or is LTFU</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3 doses missed protocol</td>
+<td style="text-align: left;"><span class="math inline">\(\dots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5 doses missed protocol</td>
+<td style="text-align: left;"><span class="math inline">\(\dots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10+ doses missed protocol</td>
+<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 2 dose or is LTFU</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 <section id="outcomes-of-interest" class="slide level2">
@@ -645,45 +683,6 @@ Our drugs of interest target reverse transcription
 </table>
 </div>
 </div></div>
-</section>
-<section id="protocols-and-inverse-probability-weights" class="slide level2">
-<h2>Protocols and Inverse Probability Weights</h2>
-<div style="font-size: 0.9em;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 29%">
-<col style="width: 70%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>Adherence</strong></th>
-<th style="text-align: left;"><strong>Definition of Variable</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1 dose missed protocol</td>
-<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 1 dose or is LTFU</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2 doses missed protocol</td>
-<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 2 dose or is LTFU</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">3 doses missed protocol</td>
-<td style="text-align: left;"><span class="math inline">\(\dots\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">5 doses missed protocol</td>
-<td style="text-align: left;"><span class="math inline">\(\dots\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10+ doses missed protocol</td>
-<td style="text-align: left;">Censor when participant misses <span class="math inline">\(\geq\)</span> 2 dose or is LTFU</td>
-</tr>
-</tbody>
-</table>
-</div>
 </section>
 <section id="statistical-analysis" class="slide level2">
 <h2>Statistical Analysis</h2>
@@ -1149,10 +1148,11 @@ So we completed a sensitivity analysis
 <section id="what-have-we-learned" class="slide level2">
 <h2>What have we learned</h2>
 <ol type="1">
-<li><p>Per protocol effects can be varied, but are frequently done poorly through exclusion<sup>1</sup></p></li>
+<li><p>Per protocol effects are important and can be varied</p></li>
+<li><p>Frequently done poorly through exclusion</p></li>
 <li><p>In the ACTG A5202 estimates for different levels of missed doses did not differ from the ITT</p></li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn11"><p>data not described in this presentation; see full dissertation for details</p></li></ol></aside></section>
+</section>
 <section id="we-had-limitations-in-our-study" class="slide level2">
 <h2>We had limitations in our study</h2>
 <ul>
@@ -1208,6 +1208,7 @@ updateCountdown(); // initial call
 </script>
 </section>
 
+<section>
 <section id="acknowledgments" class="title-slide slide level1 center">
 <h1>Acknowledgments</h1>
 <div class="columns">
@@ -1220,10 +1221,8 @@ updateCountdown(); // initial call
 <p><img data-src="images/aids_day.png" style="width:80.0%"></p>
 </div></div>
 </section>
-
-<section>
-<section id="acknowledgments-1" class="title-slide slide level1 center">
-<h1>Acknowledgments</h1>
+<section id="acknowledgments-cont." class="slide level2">
+<h2>Acknowledgments Cont.</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <ul>
