@@ -196,10 +196,7 @@ Timothy Feeney
 PDC=percentage of days covered
 </div>
 </div>
-</div><div class="footer">
-
-</div>
-</div>
+</div></div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Byrd <em>et al.</em> JAIDS. 2019</p></li><li id="fn2"><p>Adimora, Cole and Eron CID 2017</p></li></ol></aside></section>
 <section id="rcts-are-the-gold-standard-for-estimating-treatment-effects" class="slide level2">
 <h2>RCTs are the gold standard for estimating treatment effects</h2>
@@ -224,9 +221,9 @@ PDC=percentage of days covered
 </ul>
 <table class="caption-top">
 <colgroup>
-<col style="width: 73%">
-<col style="width: 13%">
-<col style="width: 13%">
+<col style="width: 53%">
+<col style="width: 23%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -244,7 +241,7 @@ PDC=percentage of days covered
 <tr class="even">
 <td style="text-align: left;">Effect being measured</td>
 <td style="text-align: left;">treatment assignment</td>
-<td style="text-align: left;">treatment assignment and protocol adherence</td>
+<td style="text-align: left;">treatment assignment <em>and</em> protocol adherence</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Analyzes based on random assignment</td>
@@ -264,15 +261,18 @@ PDC=percentage of days covered
 </tbody>
 </table>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn5"><p>Frequently done by exluding those not adhering, see Dodd et al.&nbsp;Trials 2012; Cole et al.&nbsp;JAMA Net. Open 2023</p></li></ol></aside></section>
+
+<aside><div>
+<p><span class="math inline">\(r\)</span> is randomization group, <span class="math inline">\(\bar{a}\)</span> is history of treatment</p>
+</div><ol class="aside-footnotes"><li id="fn5"><p>Frequently done by excluding those not adhering, see Dodd et al.&nbsp;Trials 2012; Cole et al.&nbsp;JAMA Net. Open 2023</p></li></ol></aside></section>
 <section id="per-protocol-effects-can-be-biased" class="slide level2">
 <h2>Per-protocol effects can be biased</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
 <li>Estimation of the per-protocol effect is much like an observational study</li>
-<li>Thus, bias can arise from non-exchangeability, non-consistency, or non-positivity</li>
-<li>Excluding those that dont adhere induces bias</li>
+<li>Thus, bias can arise from non-exchangeability</li>
+<li>Excluding those that dont adhere induces selection and immortal time bias</li>
 <li>Per protocol can deviate from ITT when deviation accounted for<sup>1</sup></li>
 </ul>
 </div><div class="column" style="width:50%;">
@@ -329,7 +329,7 @@ PDC=percentage of days covered
 </section>
 <section id="aim-1" class="slide level2">
 <h2>Aim 1:</h2>
-<p>Evaluate how often per protocol analyses 1) were mentioned 2) were done accounting for adherence</p>
+<p><strong><em>Evaluate how often per protocol analyses 1) were mentioned 2) were done accounting for adherence</em></strong></p>
 <ul>
 <li><p>Approach: Review of Phase 3/4 RCTs from Lancet, NEJM, JAMA, BMJ, Nature Med from 2020-2025</p></li>
 <li><p>Key Findings:</p>
@@ -343,7 +343,7 @@ PDC=percentage of days covered
 </section>
 <section id="aim-2" class="slide level2">
 <h2>Aim 2:</h2>
-<p>Evaluate the impact of the definition of protocol deviation on per-protocol estimates using data from the AIDS Clinical Trials Group (ACTG) A5202</p>
+<p><strong><em>Evaluate the impact of the definition of protocol deviation on per-protocol estimates using data from the AIDS Clinical Trials Group (ACTG) A5202</em></strong></p>
 <div style="margin-top: 80px;">
 
 </div>
@@ -398,13 +398,13 @@ PDC=percentage of days covered
 </div><div class="column" style="width:40%;">
 <img data-src="images/drugs_select.png" class="quarto-figure quarto-figure-left" style="width:80.0%">
 <div style="font-size: 0.7em">
-Our drugs of interest target reverse transcription
+Our drugs of interest target reverse transcription<sup>1</sup>
 </div>
 </div><div class="footer">
-<p>Gandhi <em>et al.</em> NEJM. 10.1056/NEJMct12155</p>
+
 </div>
 </div>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn10"><p>Gandhi <em>et al.</em> NEJM. 10.1056/NEJMct12155</p></li></ol></aside></section>
 <section id="adherence" class="slide level2">
 <h2>Adherence</h2>
 <ul>
@@ -548,9 +548,6 @@ Our drugs of interest target reverse transcription
 <li>≥200 copies/mL at or after 24 wks</li>
 </ul>
 </div></div>
-<div class="footer">
-
-</div>
 </section>
 <section id="covariates" class="slide level2">
 <h2>Covariates</h2>
@@ -572,7 +569,7 @@ Our drugs of interest target reverse transcription
 </ul>
 </div></div>
 <p><img src="images/pp_dag.png" style="position:absolute; bottom:0; right:0; width:800px;"></p>
-<aside><ol class="aside-footnotes"><li id="fn10"><p>evaluated at 8, 24, 48, 72, 96, and q24 weeks</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn11"><p>evaluated at 8, 24, 48, 72, 96, and q24 weeks</p></li></ol></aside></section>
 <section id="a-note-on-data-structure" class="slide level2">
 <h2>A note on data structure</h2>
 <div class="columns">
@@ -795,16 +792,13 @@ Our drugs of interest target reverse transcription
 <td style="text-align: left;">17 (312)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100\)</span>K copies/ mL %(n)</td>
+<td style="text-align: left;">Screening HIV RNA <span class="math inline">\(\geq 100,000\)</span> copies/ mL % (n)</td>
 <td style="text-align: left;">43 (398)</td>
 <td style="text-align: left;">43 (399)</td>
 <td style="text-align: left;">43 (797)</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="footer">
-
 </div>
 </section>
 <section id="population-in-actg-a5202-that-deviated-from-protocol" class="slide level2">
@@ -925,24 +919,15 @@ Our drugs of interest target reverse transcription
 </tbody>
 </table>
 </div>
-<div class="footer">
-
-</div>
 </section>
 <section id="deviations-increase-over-time" class="slide level2">
 <h2>Deviations increase over time</h2>
 
-<img data-src="images/censor_over_time.png" style="display:block; margin-left:auto; margin-right:auto;" class="r-stretch"><div class="footer">
-
-</div>
-</section>
+<img data-src="images/censor_over_time.png" style="display:block; margin-left:auto; margin-right:auto;" class="r-stretch"></section>
 <section id="the-percentage-of-missed-doses-was-low" class="slide level2">
 <h2>The percentage of missed doses was low</h2>
 
-<img data-src="images/prop_missed_doses.png" style="display:block; margin-left:auto; margin-right:auto;" class="r-stretch"><div class="footer">
-
-</div>
-</section>
+<img data-src="images/prop_missed_doses.png" style="display:block; margin-left:auto; margin-right:auto;" class="r-stretch"></section>
 <section id="there-was-no-difference-across-missed-dose-protocols" class="slide level2">
 <h2>There was no difference across missed dose protocols</h2>
 <div class="columns">
@@ -953,9 +938,6 @@ Our drugs of interest target reverse transcription
 </div><div class="column" style="width:45%;">
 <p><img data-src="images/twister.png"></p>
 </div></div>
-<div class="footer">
-
-</div>
 </section>
 <section id="our-analysis-creates-potential-ties" class="slide level2">
 <h2>Our analysis creates potential ties</h2>
@@ -1170,6 +1152,13 @@ So we completed a sensitivity analysis
 </ul></li>
 <li>Limited covariate set</li>
 </ul>
+</section>
+<section id="next-steps" class="slide level2">
+<h2>Next Steps</h2>
+<ul>
+<li><p>Generalizing these estimates to the population of the HIV positive United States in 2009</p></li>
+<li><p>Illustrate how to use these methods for a broad audience</p></li>
+</ul>
 </section></section>
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions?</h1>
@@ -1178,11 +1167,11 @@ So we completed a sensitivity analysis
 </div>
 <script>
 // ===== CONFIGURE TARGET TIME HERE =====
-const targetDateEST = "2025-12-03T15:55:59"; // <-- set your EST date/time
+const targetDateEST = "2025-12-03T15:55:00"; // <-- set your EST date/time
 
 // Convert EST → UTC internally because JS uses local timezone
 // EST is UTC-5 (or UTC-4 during daylight saving). If needed, set the offset.
-const estOffsetHours = -5;  
+const estOffsetHours = 0;  
 const targetUTC = new Date(targetDateEST).getTime() - (estOffsetHours * 3600 * 1000);
 
 function updateCountdown() {
@@ -1190,7 +1179,7 @@ function updateCountdown() {
   const distance = targetUTC - now;
 
   if (distance <= 0) {
-    document.getElementById("countdown").innerHTML = "TIME'S UP!";
+    document.getElementById("countdown").innerHTML = "Thank you for your questions. It is time to move on.";
     return;
   }
 
@@ -1226,21 +1215,25 @@ updateCountdown(); // initial call
 <div class="columns">
 <div class="column" style="width:70%;">
 <ul>
-<li><p>My amazing wife, Margo, and daughters, Emma and Lucy</p></li>
+<li><p>My amazing wife, Margo, daughters, Emma and Lucy, and my support dog Kala</p></li>
 <li><p>My Committee: Steve Cole, Jess Edwards, Bonnie Shook-Sa, Charlie Poole, David Wohl</p></li>
 <li><p>Paul Zivich</p></li>
-<li><p>Cole lab members: Mark Klose, Catie Weiner, Catherine Li and alumni Jackie Rudolph</p></li>
-<li><p>UNC Dept of Epi</p></li>
-<li><p>My Epi cohort and all my instructors</p></li>
+<li><p>Cole lab members: Catherine Li, Mark Klose, Catie Weiner, Ning Zhang and alumni Jackie Rudolph</p></li>
+<li><p>UNC Dept of Epi, my cohort and all my instructors</p></li>
+<li><p>Funders: NIH, UNC Graduate School</p></li>
 </ul>
 </div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/kids.png"></p>
-<figcaption>*wife not shown</figcaption>
+<figcaption>*wife and dog not shown</figcaption>
 </figure>
 </div>
 </div></div>
+</section>
+<section id="thank-you-for-your-time" class="slide level2">
+<h2>Thank you for your time</h2>
+<p>Timothy Feeney tfeeney@alumni.unc.edu</p>
 </section>
 <section id="per-protocol-effects-differ-from-the-itt" class="slide level2">
 <h2>Per-protocol effects differ from the ITT</h2>
